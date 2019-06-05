@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RefOntoUML:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RefOntoUML="http://nemo.inf.ufes.br/ontouml/refontouml" xmi:id="_YJmgMAIvEemgp4VqqJXrHQ" name="Model">
+  <packagedElement xsi:type="RefOntoUML:Kind" xmi:id="_awaKYAIvEemgp4VqqJXrHQ" name="Person" visibility="public"/>
+  <packagedElement xsi:type="RefOntoUML:Phase" xmi:id="_iAd3oAIvEemgp4VqqJXrHQ" name="Alive" visibility="public">
+    <generalization xmi:id="_QluXsAIyEemgp4VqqJXrHQ" general="_awaKYAIvEemgp4VqqJXrHQ" generalizationSet="_XzKOwAIyEemgp4VqqJXrHQ"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Phase" xmi:id="_j_MOIAIvEemgp4VqqJXrHQ" name="Decease" visibility="public">
+    <generalization xmi:id="_S12AMAIyEemgp4VqqJXrHQ" general="_awaKYAIvEemgp4VqqJXrHQ" generalizationSet="_XzKOwAIyEemgp4VqqJXrHQ"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:GeneralizationSet" xmi:id="_XzKOwAIyEemgp4VqqJXrHQ" name="phases" isCovering="true" isDisjoint="true" generalization="_S12AMAIyEemgp4VqqJXrHQ _QluXsAIyEemgp4VqqJXrHQ"/>
+  <packagedElement xsi:type="RefOntoUML:SubKind" xmi:id="_dei8IBBHEemxtdY-Ufmn2g" name="Man" visibility="public">
+    <generalization xmi:id="_rwR8YBBHEemxtdY-Ufmn2g" general="_awaKYAIvEemgp4VqqJXrHQ" generalizationSet="_w0PlgBBHEemxtdY-Ufmn2g"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:SubKind" xmi:id="_ntIQABBHEemxtdY-Ufmn2g" name="Woman" visibility="public">
+    <generalization xmi:id="_t6dU8BBHEemxtdY-Ufmn2g" general="_awaKYAIvEemgp4VqqJXrHQ" generalizationSet="_w0PlgBBHEemxtdY-Ufmn2g"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:GeneralizationSet" xmi:id="_w0PlgBBHEemxtdY-Ufmn2g" name="sexes" isCovering="true" isDisjoint="true" generalization="_rwR8YBBHEemxtdY-Ufmn2g _t6dU8BBHEemxtdY-Ufmn2g"/>
+  <packagedElement xsi:type="RefOntoUML:Role" xmi:id="_GBBFQBBIEemxtdY-Ufmn2g" name="Husband" visibility="public">
+    <generalization xmi:id="_BjPc8BBJEemxtdY-Ufmn2g" general="_dei8IBBHEemxtdY-Ufmn2g"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Role" xmi:id="_JopTQBBIEemxtdY-Ufmn2g" name="Wife" visibility="public">
+    <generalization xmi:id="_CkoogBBJEemxtdY-Ufmn2g" general="_ntIQABBHEemxtdY-Ufmn2g"/>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Relator" xmi:id="_MPvRUBBIEemxtdY-Ufmn2g" name="Marriage" visibility="public"/>
+  <packagedElement xsi:type="RefOntoUML:Mediation" xmi:id="_X818MBBJEemxtdY-Ufmn2g" name="Mediation2" visibility="public" memberEnd="_X818MRBJEemxtdY-Ufmn2g _X818NBBJEemxtdY-Ufmn2g" navigableOwnedEnd="_X818MRBJEemxtdY-Ufmn2g _X818NBBJEemxtdY-Ufmn2g">
+    <ownedEnd xmi:id="_X818MRBJEemxtdY-Ufmn2g" name="marriage" type="_MPvRUBBIEemxtdY-Ufmn2g" association="_X818MBBJEemxtdY-Ufmn2g">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" xmi:id="_X818MhBJEemxtdY-Ufmn2g" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" xmi:id="_X818MxBJEemxtdY-Ufmn2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_X818NBBJEemxtdY-Ufmn2g" name="husband" type="_GBBFQBBIEemxtdY-Ufmn2g" isReadOnly="true" association="_X818MBBJEemxtdY-Ufmn2g">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" xmi:id="_X818NRBJEemxtdY-Ufmn2g" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" xmi:id="_X818NhBJEemxtdY-Ufmn2g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="RefOntoUML:Mediation" xmi:id="_frYVMBBJEemxtdY-Ufmn2g" name="Mediation3" visibility="public" memberEnd="_frYVMRBJEemxtdY-Ufmn2g _frYVNBBJEemxtdY-Ufmn2g" navigableOwnedEnd="_frYVMRBJEemxtdY-Ufmn2g _frYVNBBJEemxtdY-Ufmn2g">
+    <ownedEnd xmi:id="_frYVMRBJEemxtdY-Ufmn2g" name="marriage" type="_MPvRUBBIEemxtdY-Ufmn2g" association="_frYVMBBJEemxtdY-Ufmn2g">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" xmi:id="_frYVMhBJEemxtdY-Ufmn2g" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" xmi:id="_frYVMxBJEemxtdY-Ufmn2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_frYVNBBJEemxtdY-Ufmn2g" name="wife" type="_JopTQBBIEemxtdY-Ufmn2g" isReadOnly="true" association="_frYVMBBJEemxtdY-Ufmn2g">
+      <upperValue xsi:type="RefOntoUML:LiteralUnlimitedNatural" xmi:id="_frYVNRBJEemxtdY-Ufmn2g" value="1"/>
+      <lowerValue xsi:type="RefOntoUML:LiteralInteger" xmi:id="_frYVNhBJEemxtdY-Ufmn2g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</RefOntoUML:Model>
